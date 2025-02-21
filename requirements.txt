@@ -1,0 +1,10 @@
+langchain==0.1.0
+langgraph==0.0.10
+transformers==4.36.0
+faiss-cpu==1.7.4
+pypdf2==3.0.1
+unstructured==0.10.30
+streamlit==1.29.0
+sentence-transformers==2.2.2
+python-dotenv==1.0.0
+huggingface-hub==0.20.1
