@@ -1,10 +1,12 @@
 langchain==0.1.0
 langgraph==0.0.10
 transformers==4.36.0
-faiss-cpu==1.7.4
+faiss-cpu-no-avx2==1.7.4  # Changed from faiss-cpu to pre-built version
 pypdf2==3.0.1
 unstructured==0.10.30
 streamlit==1.29.0
 sentence-transformers==2.2.2
 python-dotenv==1.0.0
 huggingface-hub==0.20.1
+nltk==3.8.1
+scikit-learn==1.4.0
