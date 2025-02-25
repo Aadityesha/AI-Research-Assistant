@@ -1,10 +1,10 @@
 import streamlit as st
-from langchain.llms import OpenAI
+from langchain.llms import HuggingFaceHub
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
-# Initialize LLM (ensure API key is set in your environment)
-llm = OpenAI(model_name="text-davinci-003")
+# Initialize LLM with a free Hugging Face model
+llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct", model_kwargs={"temperature": 0.5, "max_length": 500})
 
 # Define a summarization prompt
 template = "Summarize the following text: {text}"
@@ -43,4 +43,4 @@ if st.button("Get Answer"):
 
 # Footer
 st.markdown("---")
-st.markdown("Powered by Streamlit & LangChain")
+st.markdown("Powered by Streamlit & LangChain with Hugging Face Models")
